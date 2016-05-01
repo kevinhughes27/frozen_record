@@ -389,15 +389,6 @@ describe 'querying' do
 
   end
 
-  describe '.to_xml' do
-
-    it 'serialize the results' do
-      json = Country.all.to_json
-      expect(json).to be == Country.all.to_a.to_json
-    end
-
-  end
-
   describe 'class methods delegation' do
 
     it 'can be called from a scope' do

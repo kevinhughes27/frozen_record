@@ -6,7 +6,6 @@ module FrozenRecord
     include ActiveModel::Conversion
     include ActiveModel::AttributeMethods
     include ActiveModel::Serializers::JSON
-    include ActiveModel::Serializers::Xml
 
     FIND_BY_PATTERN = /\Afind_by_(\w+)(!?)/
     FALSY_VALUES = [false, nil, 0, ''].to_set
